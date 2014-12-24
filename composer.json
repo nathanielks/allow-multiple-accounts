@@ -1,0 +1,21 @@
+{
+  "name": "nathanielks/allow-multiple-accounts",
+  "type": "wordpress-plugin",
+  "description": "Allow Multiple Accounts",
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/nathanielks/allow-multiple-accounts",
+  "authors": [
+    {
+      "name": "Nathaniel Schweinberg",
+      "email": "nathaniel@fightthecurrent.org",
+      "homepage": "https://github.com/nathanielks"
+    },
+    {
+      "name": "Scott Reilly",
+      "homepage": "https://github.com/coffee2code"
+    }
+  ],
+  "require": {
+    "composer/installers": ">=v1.0.6"
+  }
+}
