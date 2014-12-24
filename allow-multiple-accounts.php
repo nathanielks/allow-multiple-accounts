@@ -6,7 +6,7 @@
  */
 /*
 Plugin Name: Allow Multiple Accounts
-Version: 2.6.2
+Version: 2.6.2.1
 Plugin URI: http://coffee2code.com/wp-plugins/allow-multiple-accounts/
 Author: Scott Reilly
 Author URI: http://coffee2code.com/
