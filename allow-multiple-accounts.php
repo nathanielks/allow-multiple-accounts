@@ -151,7 +151,7 @@ class c2c_AllowMultipleAccounts extends C2C_Plugin_033 {
 	 *
 	 * @return void (Text will be echoed.)
 	 */
-	public function options_page_description() {
+	public function options_page_description( $localized_heading_text = '' ) {
 		$options = $this->get_options();
 		parent::options_page_description( __( 'Allow Multiple Accounts Settings', $this->textdomain ) );
 		echo '<p>' . __( 'Allow multiple user accounts to be created from the same email address.', $this->textdomain ) . '</p>';
