@@ -2,7 +2,7 @@
 /**
  * @package Allow_Multiple_Accounts
  * @author Scott Reilly
- * @version 2.6.2
+ * @version 2.6.2.2
  */
 /*
 Plugin Name: Allow Multiple Accounts
@@ -486,10 +486,14 @@ END;
 					if ( $e )
 						$new_errors[] = $e;
 				}
-				if ( ! empty( $new_errors ) )
+				if ( ! empty( $new_errors ) ){
 					$result['errors']->errors['user_email'] = $new_errors;
-				else
-					unset( $result['errors']->errors['user_email'] );
+				}
+				else{
+					$errors = $result['errors']->errors;
+					unset( $errors['user_email'] );
+					$result['errors']->errors = $errors;
+				}
 			}
 		}
 		return $result;
